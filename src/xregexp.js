@@ -43,7 +43,7 @@ const nativeTokens = {
 // Any backreference or dollar-prefixed character in replacement strings
 const replacementToken = /\$(?:\{([^\}]+)\}|<([^>]+)>|(\d\d?|[\s\S]?))/g;
 // Check for correct `exec` handling of nonparticipating capturing groups
-const correctExecNpcg = /()??/.exec('')[1] === undefined;
+const correctExecNpcg = true;
 // Check for ES6 `flags` prop support
 const hasFlagsProp = /x/.flags !== undefined;
 
